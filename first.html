@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="./mycontroller.js"></script>
+    <style>
+        table tr:nth-child(odd) {
+            color: blue;
+            background-color: gray;
+        }
+
+        table, tr, th, td {
+            border-style: solid;
+            border-radius: 1px;
+            border-color: gray;
+            border-collapse: collapse;
+        }
+            .myclass {
+             font-size: large;
+             float: left;
+             margin: auto;
+             padding: 0%; 
+             float: top;
+             margin-left: 5px;     
+        }
+        ul {
+            list-style-type: none;
+            padding: 0%;
+            margin: 0%;
+            overflow: hidden;
+            background-color: aqua;
+        }
+        li {
+            float: left;
+        }
+        li {
+            display: block;
+            color: blue;
+            text-align: center;
+            padding: 20px;
+            text-decoration: none;
+            word-spacing: 10px;
+       }
+         list a:hover {
+             background-color:red;    
+         }
+            </style>
+</head>
+<body style="background: linear-gradient(to right, #d2afff,  #ffa0f2);">
+    <ul class="nav">
+        <ol>
+            <a href="home.html">HOME</a>
+            <a href="ragistration.html">RAGISTRATION</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="picture.html">PICTURE</a>
+        </ol>
+    </ul>
+    <div ng-app="myApp" ng-controller="nameCtrl">
+        Search:
+        <input type="text" ng-model="check">
+        <table>
+            <tr>
+                <th ng-click="orderByMe('provinceState')">Provice State</th>
+                <th ng-click="orderByMe('countryRegion')">countryRegion</th>
+                <th ng-click="orderByMe('lastUpdate')">lastUpdate</th>
+                <th ng-click="orderByMe('lat')">Lattitude</th>
+                <th ng-click="orderByMe('long')">Longitude</th>
+                <th ng-click="orderByMe('confirmed')">Conformed</th>
+                <th ng-click="orderByMe('recovered')">Recovered</th>
+                <th ng-click="orderByMe('deaths')">Deaths</th>
+                <th ng-click="orderByMe('cases28Days')">Cases in last 28 Days</th>
+                <th ng-click="orderByMe('deaths28Days')">Deaths in last 28 Days</th>
+            </tr>
+            <tr ng-repeat="item in items | filter: check | orderBy:myOrderBy">
+                <td >{{item.provinceState}}</td>
+                <td>{{item.countryRegion}}</td>
+                <td>{{item.lastUpdate}}</td>
+                <td>{{item.lat}}</td>
+                <td>{{item.long}}</td>
+                <td>{{item.confirmed}}</td>
+                <td>{{item.recovered}}</td>
+                <td>{{item.deaths}}</td>
+                <td>{{item.cases28Days}}</td>
+                <td>{{item.deaths28Days}}</td>
+            </tr>
+        </table>
+    </div>
+    <div class="myclass">
+        <img src="covid.png" width="500px" height="300px">
+        <img src="covid.png" width="500px" height="300px">
+        <img src="covid.png" width="500px" height="300px">
+        <img src="covida.png"  width="500px" height="300px"> 
+        <img src="c.png" width="500px" height="300px">
+        <img src="c.png" width="500px" height="300px">
+    <img src="covidapp.png" width="500px" height="300px">
+    <img src="app.png" width="500px" height="300px">
+    <img src="covidaa.png" width="500px" height="300px">
+    <img src="mancovid.png" width="500px" height="300px">
+    <img src="man.png" width="500px" height="300px">
+    <img src="covid1.png" width="500px" height="300px">
+    <img src="covid2.png" width="500px" height="300px">
+    <img src="covid3.png" width="500px" height="300px">
+    <img src="covid4.png" width="500px" height="300px">
+    <img src="covid5.png" width="500px" height="300px">
+    <img src="covid6.png" width="500px" height="300px">
+    <img src="covid7.png" width="500px" height="300px">
+    <img src="covid8.png" width="500px" height="300px">
+    <img src="covid9.png" width="500px" height="300px">
+    <img src="covid10.png" width="500px" height="300px">
+    <img src="covid11.png" width="500px" height="300px">
+    <img src="covid.png" width="500px" height="300px">
+  <img src="covid1.png" width="500px" height="300px">
+  <img src="covid2.png" width="500px" height="300px">
+  <img src="covid3.png" width="500px" height="300px">
+  <img src="covid4.png" width="500px" height="300px">
+  <img src="covid5.png" width="500px" height="300px">
+  <img src="covid6.png" width="500px" height="300px">
+  <img src="covid7.png" width="500px" height="300px">
+  <img src="covid8.png" width="500px" height="300px">
+  <img src="covid9.png" width="500px" height="300px">
+  <img src="covida.png" width="500px" height="300px">
+  <img src="covid10.png" width="500px" height="300px">
+  <img src="covid11.png" width="500px" height="300px">
+  <img src="covid12.png" width="500px" height="300px">
+  <img src="covid13 - Copy.png" width="500px" height="300px">
+  <img src="covid14 - Copy.png" width="500px" height="300px">
+  <img src="covid15.png" width="500px" height="300px">
+  <img src="covid16 - Copy.png" width="500px" height="300px">
+  <img src="covid17.png" width="500px" height="300px">
+  <img src="covid18.png" width="500px" height="300px">
+  <img src="covid19.png" width="500px" height="300px">
+  <img src="covid20.png" width="500px" height="300px">
+  <img src="covid21.png" width="500px" height="300px">
+  <img src="covid22.png" width="500px" height="300px">
+  <img src="covid23.png" width="500px" height="300px">
+  <img src="covid24.png" width="500px" height="300px">
+  <img src="covid25.png" width="500px" height="300px">
+  <img src="covid.png" width="500px" height="300px">
+  <img src="covid.png" width="500px" height="300px">
+  <img src="covid.png" width="500px" height="300px">
+  <img src="covida.png"  width="500px" height="300px"> <img src="c.png" width="500px" height="300px">
+  <img src="c.png" width="500px" height="300px">
+<img src="covidapp.png" width="500px" height="300px">
+<img src="app.png" width="500px" height="300px">
+<img src="covidaa.png" width="500px" height="300px">
+<img src="mancovid.png" width="500px" height="300px">
+<img src="man.png" width="500px" height="300px">
+<img src="covid1.png" width="500px" height="300px">
+<img src="covid2.png" width="500px" height="300px">
+<img src="covid3.png" width="500px" height="300px">
+<img src="covid4.png" width="500px" height="300px">
+<img src="covid5.png" width="500px" height="300px">
+<img src="covid6.png" width="500px" height="300px">
+<img src="covid7.png" width="500px" height="300px">
+<img src="covid8.png" width="500px" height="300px">
+<img src="covid9.png" width="500px" height="300px">
+<img src="covid10.png" width="500px" height="300px">
+<img src="covid11.png" width="500px" height="300px">
+<img src="covid.png" width="500px" height="300px">
+<img src="covid1.png" width="500px" height="300px">
+<img src="covid2.png" width="500px" height="300px">
+<img src="covid3.png" width="500px" height="300px">
+<img src="covid4.png" width="500px" height="300px">
+<img src="covid5.png" width="500px" height="300px">
+<img src="covid6.png" width="500px" height="300px">
+<img src="covid7.png" width="500px" height="300px">
+<img src="covid8.png" width="500px" height="300px">
+<img src="covid9.png" width="500px" height="300px">
+<img src="covida.png" width="500px" height="300px">
+<img src="covid10.png" width="500px" height="300px">
+<img src="covid11.png" width="500px" height="300px">
+<img src="covid12.png" width="500px" height="300px">
+<img src="covid13 - Copy.png" width="500px" height="300px">
+<img src="covid14 - Copy.png" width="500px" height="300px">
+<img src="covid15.png" width="500px" height="300px">
+<img src="covid16 - Copy.png" width="500px" height="300px">
+<img src="covid17.png" width="500px" height="300px">
+<img src="covid18.png" width="500px" height="300px">
+<img src="covid19.png" width="500px" height="300px">
+<img src="covid20.png" width="500px" height="300px">
+<img src="covid21.png" width="500px" height="300px">
+<img src="covid22.png" width="500px" height="300px">
+<img src="covid23.png" width="500px" height="300px">
+<img src="covid24.png" width="500px" height="300px">
+<img src="covid25.png" width="500px" height="300px">
+<img src="covid.png" width="500px" height="300px">
+<img src="covid.png" width="500px" height="300px">
+<img src="covid.png" width="500px" height="300px">
+<img src="covida.png"  width="500px" height="300px"> <img src="c.png" width="500px" height="300px">
+<img src="c.png" width="500px" height="300px">
+<img src="covidapp.png" width="500px" height="300px">
+<img src="app.png" width="500px" height="300px">
+<img src="covidaa.png" width="500px" height="300px">
+<img src="mancovid.png" width="500px" height="300px">
+<img src="man.png" width="500px" height="300px">
+<img src="covid1.png" width="500px" height="300px">
+<img src="covid2.png" width="500px" height="300px">
+<img src="covid3.png" width="500px" height="300px">
+<img src="covid4.png" width="500px" height="300px">
+<img src="covid5.png" width="500px" height="300px">
+<img src="covid6.png" width="500px" height="300px">
+<img src="covid7.png" width="500px" height="300px">
+<img src="covid8.png" width="500px" height="300px">
+<img src="covid9.png" width="500px" height="300px">
+<img src="covid10.png" width="500px" height="300px">
+<img src="covid11.png" width="500px" height="300px">
+<img src="covid.png" width="500px" height="300px">
+<img src="covid1.png" width="500px" height="300px">
+<img src="covid2.png" width="500px" height="300px">
+<img src="covid3.png" width="500px" height="300px">
+<img src="covid4.png" width="500px" height="300px">
+<img src="covid5.png" width="500px" height="300px">
+<img src="covid6.png" width="500px" height="300px">
+<img src="covid7.png" width="500px" height="300px">
+<img src="covid8.png" width="500px" height="300px">
+<img src="covid9.png" width="500px" height="300px">
+<img src="covida.png" width="500px" height="300px">
+<img src="covid10.png" width="500px" height="300px">
+<img src="covid11.png" width="500px" height="300px">
+<img src="covid12.png" width="500px" height="300px">
+<img src="covid13 - Copy.png" width="500px" height="300px">
+<img src="covid14 - Copy.png" width="500px" height="300px">
+<img src="covid15.png" width="500px" height="300px">
+<img src="covid16 - Copy.png" width="500px" height="300px">
+<img src="covid17.png" width="500px" height="300px">
+<img src="covid18.png" width="500px" height="300px">
+<img src="covid19.png" width="500px" height="300px">
+<img src="covid20.png" width="500px" height="300px">
+<img src="covid21.png" width="500px" height="300px">
+<img src="covid22.png" width="500px" height="300px">
+<img src="covid23.png" width="500px" height="300px">
+<img src="covid24.png" width="500px" height="300px">
+<img src="covid25.png" width="500px" height="300px">
+<img src="covid.png" width="500px" height="300px">
+<img src="covid.png" width="500px" height="300px">
+<img src="covid.png" width="500px" height="300px">
+<img src="covida.png"  width="500px" height="300px"> <img src="c.png" width="500px" height="300px">
+<img src="c.png" width="500px" height="300px">
+<img src="covidapp.png" width="500px" height="300px">
+<img src="app.png" width="500px" height="300px">
+<img src="covidaa.png" width="500px" height="300px">
+<img src="mancovid.png" width="500px" height="300px">
+<img src="man.png" width="500px" height="300px">
+<img src="covid1.png" width="500px" height="300px">
+<img src="covid2.png" width="500px" height="300px">
+<img src="covid3.png" width="500px" height="300px">
+<img src="covid4.png" width="500px" height="300px">
+<img src="covid5.png" width="500px" height="300px">
+<img src="covid6.png" width="500px" height="300px">
+<img src="covid7.png" width="500px" height="300px">
+<img src="covid8.png" width="500px" height="300px">
+<img src="covid9.png" width="500px" height="300px">
+<img src="covid10.png" width="500px" height="300px">
+<img src="covid11.png" width="500px" height="300px">
+<img src="covid.png" width="500px" height="300px">
+<img src="covid1.png" width="500px" height="300px">
+<img src="covid2.png" width="500px" height="300px">
+<img src="covid3.png" width="500px" height="300px">
+<img src="covid4.png" width="500px" height="300px">
+<img src="covid5.png" width="500px" height="300px">
+<img src="covid6.png" width="500px" height="300px">
+<img src="covid7.png" width="500px" height="300px">
+<img src="covid8.png" width="500px" height="300px">
+<img src="covid9.png" width="500px" height="300px">
+<img src="covida.png" width="500px" height="300px">
+<img src="covid10.png" width="500px" height="300px">
+<img src="covid11.png" width="500px" height="300px">
+<img src="covid12.png" width="500px" height="300px">
+<img src="covid13 - Copy.png" width="500px" height="300px">
+<img src="covid14 - Copy.png" width="500px" height="300px">
+<img src="covid15.png" width="500px" height="300px">
+<img src="covid16 - Copy.png" width="500px" height="300px">
+<img src="covid17.png" width="500px" height="300px">
+<img src="covid18.png" width="500px" height="300px">
+<img src="covid19.png" width="500px" height="300px">
+<img src="covid20.png" width="500px" height="300px">
+<img src="covid21.png" width="500px" height="300px">
+<img src="covid22.png" width="500px" height="300px">
+<img src="covid23.png" width="500px" height="300px">
+<img src="covid24.png" width="500px" height="300px">
+<img src="covid25.png" width="500px" height="300px">
+  
+</div>
+    <p>AarogyaSetu is a mobile application developed by the Government of
+         India to connect essential health services with the people of India 
+         in our combined fight against COVID-19. The App is aimed at augmenting 
+         the initiatives of the Government of India, particularly the Department
+          of Health, in proactively reaching out to and informing the users of the
+           app regarding risks, best practices and relevant advisories pertaining to 
+           the containment of COVID-19.</p>
+           <p>The Coronavirus pandemic is the defining global health crisis of our time.
+                Since its emergence late last year, the virus has spread to every continent
+                 except Antarctica. Cases are rising daily in Africa and South America, and
+                  Europe has taken over as the epicentre of the disease and more cases are
+                   now being reported every day than in China at the height of its epidemic.
+                  Countries are racing to slow the spread of the disease by testing and treating 
+                  patients, carrying out contact tracing, limiting travel, quarantining citizens, 
+                  and cancelling large gatherings such as sporting events, concerts, and schools.
+            The pandemic is moving like a wave—one that may yet crash on those least able to cope.
+            
+            But COVID-19 is much more than a health crisis. By stressing every one of the countries
+             it touches, it has the potential to create devastating social, economic and political 
+             crises that will leave deep scars.
+            
+            We are in uncharted territory. Many of our communities are unrecognizable from even a 
+            week ago. Dozens of the world’s greatest cities are deserted as people stay indoors, 
+            either by choice or by government order. Across the world, shops, theatres, restaurants
+             and bars are closing.
+            
+            Every day, people are losing jobs and income, with no way of knowing when normality will 
+            return. Small island nations, heavily dependent on tourism, have empty hotels and deserted 
+            beaches. The International Labour Organization estimates that 25 million jobs could be lost.
+            
+             
+            
+            UNDP response
+            Every country needs to act immediately to prepare, respond, and recover. The UN system will 
+            support countries through each stage, with a focus on the most vulnerable.
+            
+            Drawing on our experience with other outbreaks such as Ebola, HIV, SARS, TB and malaria, as 
+            well as our long history of working with the private and public sector, UNDP will help countries
+             to urgently and effectively respond to COVID-19 as part of its mission to eradicate poverty, reduce
+              inequalities and build resilience to crises and shocks.
+            
+             
+            
+            “We are already hard at work, together with our UN family and other partners, on three immediate priorities:
+             supporting the health response including the procurement and supply of essential health products, under WHO’s 
+             leadership, strengthening crisis management and response, and addressing critical social and economic impacts.”
+            UNDP Administrator, Achim Steiner
+             
+            
+            UNDP response in China
+            
+            In China the response was led by the Resident Coordinator, with WHO technical guidance and participation of the
+             UN Country Team, to respond to all aspects of the pandemic.
+            
+             
+            
+            UNDP is playing an instrumental role in this process. During the early stages, we worked on the procurement of 
+            critical medical supplies for China. UNDP donated urgently needed equipment and supplies to help China’s frontline 
+            health workers to combat the epidemic, both from abroad and through private sector partnerships.
+            
+            
+            Handover ceremony at UN compound in Beijing for donation of critical medical supplies to the Chinese government. Photo:
+             UNDP China
+             
+            
+            As the situation in China improved, and as China is one of the last markets that has not imposed export bans on Personal 
+            Protective Equipment (PPE) and medical products, focus started shifting towards UNDP’s global emergency response for COVID-19 
+            by facilitating the sourcing of medical supplies and equipment from China. We have supported procurement of ventilators and
+             PPE for country offices including 250,000 masks for the UN Country Team in Iran, Mongolia and Vietnam, PPE and ventilators
+              for Nigeria and Cameroon, and 1,000 ventilators for various COs among other supplies.
+            
+               Yet the effects of the pandemic transcend health issues, impacting all aspects of economic and social life. In this regard, 
+               we are undertaking a Rapid Socio-Economic Assessment with RC/UNCT, supporting UNICEF and UNFPA, to assess the impact of the 
+               epidemic on poor households.  
+            
+            COVID-19's resulting economic slowdown not only effects GDP, but people's jobs and their livelihoods. As part of our response,
+             UNDP conducted an analysis on the impact on businesses, the support needed by them for recovery, and the impact on their 
+             ability to implement the SDGs with a focus on large private-owned enterprises (POEs) and small and medium enterprises (SMEs).
+            
+            UNDP will also roll out a programme for COVID-19 recovery in poverty counties. The programme focuses on 3 areas: readiness 
+            to prevent a second wave; livelihoods and employment generation; and impoverished county recovery plans.
+            
+            
+            
+            Additionally, we launched a social media campaign in partnership with WHO that mobilized the online community to disseminate
+             information on the coronavirus, ultimately reaching more than 36 million people. Netizens created content in 50 dialects and 
+             languages, helping to "Spread the Word, Not the Virus," sharing best health practices so that elderly and other disadvantaged
+              people in ethnic minority groups know how to protect themselves. 
+            
+             
+            
+            While we do this, we must also consider ways to prevent a similar pandemic recurring. In the longer term, UNDP will look 
+            at ways to help countries to better prevent and manage such crises and ensure that the world makes full use of what we will 
+            learn from this one.
+            
+            A global response now is an investment in our future.</p>
+</body>
+</html>
